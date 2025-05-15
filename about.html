@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About NEPPA</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 80px 0;
+            background: #e3f2fd;
+        }
+
+        .hero-heading {
+            font-size: 3.5rem;
+            color: #1a237e;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-lead {
+            font-size: 1.2rem;
+            color: #424242;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1000px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        
+
+        /* Team Section */
+        .team-section {
+            padding: 80px 0;
+            background: #e8f5e9;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 3px solid #00c853;
+        }
+
+        .team-name {
+            padding: 20px;
+            font-size: 1.2rem;
+            color: #1b5e20;
+        }
+
+        .team-role {
+            padding: 0 20px 20px;
+            color: #4caf50;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            padding: 80px 0;
+            background: #6c5ce7;
+            color: white;
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background: #ffd600;
+            color: #2d3436;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<style>
+        /* Add these new styles */
+        .features-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e1f5fe 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            color: #1a237e;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            color: #424242;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-heading">About NEPPA</h1>
+            <p class="hero-lead">
+                NEPPA connects international students to communities, events, and opportunities that help them thrive abroad.
+            </p>
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Student community" 
+                 class="hero-image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">App Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3 class="feature-title">Comprehensive Profiles</h3>
+                    <p class="feature-description">
+                        Create detailed student profiles showcasing academic interests, 
+                        background, and hobbies. Verified institution profiles for course 
+                        promotion and resource sharing.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏫</div>
+                    <h3 class="feature-title">College Connections</h3>
+                    <p class="feature-description">
+                        Educational institutions can promote courses, share events/webinars, 
+                        and provide academic resources. Direct access to enrollment 
+                        procedures and deadlines.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">Dynamic Groups</h3>
+                    <p class="feature-description">
+                        Join study groups, lifestyle communities, and interest-based groups. 
+                        Collaborate on academic topics or discuss life abroad in specialized 
+                        forums.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🍴</div>
+                    <h3 class="feature-title">Local Business Hub</h3>
+                    <p class="feature-description">
+                        Food businesses showcase menus and special offers. Student reviews 
+                        and ratings help discover great local spots with exclusive student 
+                        discounts.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3 class="feature-title">Community Events</h3>
+                    <p class="feature-description">
+                        Unified event calendar for academic and social activities. Create 
+                        events, manage RSVPs, and participate in cultural festivals or 
+                        student meetups.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Safe Environment</h3>
+                    <p class="feature-description">
+                        Robust moderation system with reporting tools and community 
+                        guidelines. Premium features and advertising opportunities 
+                        support sustainable growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Meet the Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="Sujan.jpg" 
+                         alt="Sujan Aran" 
+                         class="team-image">
+                    <h3 class="team-name">Sujan Aran</h3>
+                    <p class="team-role">Team Leader</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" 
+                         alt="Roshan Khati" 
+                         class="team-image">
+                    <h3 class="team-name">Roshan Khati</h3>
+                    <p class="team-role">Member</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" 
+                         alt="Pranisha Kunwar" 
+                         class="team-image">
+                    <h3 class="team-name">Pranisha Kunwar</h3>
+                    <p class="team-role">Member</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" 
+                         alt="Kamal Timilsaina" 
+                         class="team-image">
+                    <h3 class="team-name">Kamal Timilsaina</h3>
+                    <p class="team-role">Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Join the Movement?</h2>
+            <p class="cta-text">Be part of a growing global student community today.</p>
+            <a href="/signup" class="cta-button">Get Started</a>
+        </div>
+    </section>
+</body>
+</html>
